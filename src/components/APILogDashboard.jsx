@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 const APILogDashboard = () => {
   const [apiLogs, setApiLogs] = useState([]);
   const scrollContainerRef = useRef(null);
-  const API = import.meta.env.API || 'http://localhost:4000';
+  const API = import.meta.env.API || 'https://server-7x5o.onrender.com';
 
   const fetchApiLogs = async () => {
     try {
