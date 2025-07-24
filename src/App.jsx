@@ -16,6 +16,8 @@ function App() {
           <Route path="kafka" element={<KafkaLog />} />
           <Route path="redis" element={<RedisLog />} />
         </Route>
+
+        <Route path="*" element={<SocketLog />} />
       </Routes>
     </Router>
   )

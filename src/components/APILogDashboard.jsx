@@ -3,8 +3,10 @@ import React, { useEffect, useRef, useState } from 'react';
 const APILogDashboard = () => {
   const [apiLogs, setApiLogs] = useState([]);
   const scrollContainerRef = useRef(null);
-  const API = import.meta.env.API || 'https://server-7x5o.onrender.com';
 
+  console.log('API Endpoint:', import.meta.env.VITE_API_BE);
+  const API = import.meta.env.API || 'https://server-7x5o.onrender.com';
+  
   const fetchApiLogs = async () => {
     try {
       const res = await fetch(`${API}/api/queue/logs`);

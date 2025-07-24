@@ -4,6 +4,8 @@ import io from 'socket.io-client';
 const LogDashboard = () => {
   const [logs, setLogs] = useState([]);
   const scrollContainerRef = useRef(null);
+
+  console.log('API Endpoint:', import.meta.env.VITE_API_BE);
   const API = import.meta.env.API || 'https://server-7x5o.onrender.com';
 
   useEffect(() => {
