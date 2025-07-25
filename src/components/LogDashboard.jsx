@@ -6,7 +6,7 @@ const LogDashboard = () => {
   const scrollContainerRef = useRef(null);
 
   console.log('API Endpoint:', import.meta.env.VITE_API_BE);
-  const API = import.meta.env.API || 'https://server-7x5o.onrender.com';
+  const API = import.meta.env.VITE_API_BE || 'https://server-7x5o.onrender.com';
 
   useEffect(() => {
     const socket = io(API);

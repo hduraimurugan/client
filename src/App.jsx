@@ -13,6 +13,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<SocketLog />} />
           <Route path="queue" element={<QueueLog />} />
+          
           <Route path="kafka" element={<KafkaLog />} />
           <Route path="redis" element={<RedisLog />} />
         </Route>
